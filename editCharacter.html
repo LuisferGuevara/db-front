@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./editCharacter.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>API DRAGON BALL</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">ALL CHARACTERS</a></li>
+            <li><a href="./getCharacter.html">GET ONE CHARACTER</a></li>
+            <li><a href="./createCharacter.html">CREATE CHARACTER</a></li>
+        </ul>
+    </nav>
+    <div class="select--box">
+        <select class="select"></select>
+        <button class="select--button">Empezar a editar </button>
+    </div>
+    <div class="form--box hide">
+        <p>- Introduce todos los datos del personaje que quieres editar -</p>
+        <div class="formItem">
+            <label>Nombre: </label>
+            <input type="text" class="name" />
+          </div>
+          
+          <div class="formItem">
+            <label>Selecciona la raza:</label>
+            <select class="race">
+              <option value="human">Human</option>
+              <option value="saiyan">Saiyan</option>
+              <option value="android">Android</option>
+              <option value="namekian">Namekian</option>
+              <option value="unknown">Unknown</option>
+            </select>
+          </div>
+          <div class="formItem">
+            <label>Imagen: </label>
+            <input type="text" class="img" />
+          </div>
+          <div class="formItem">
+            <label>Selecciona el número de universo: </label>
+            <input type="number" class="universe" />
+          </div>
+          <div class="formItem">
+            <label>¿Se transforma?</label>
+            <input type="checkbox" class="transform" />
+          </div>
+          <div class="formItem">
+            <label>Selecciona el género: </label>
+            <select class="genre">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="namekian">Namekian</option>
+              <option value="angel">Angel</option>
+              <option value="genderless">Genderless</option>
+            </select>
+          </div>
+          <button type="submit" class="enviar--form">ENVIAR PERSONAJE MODIFICADO</button>
+    </div>
+    
+</body>
+</html>
